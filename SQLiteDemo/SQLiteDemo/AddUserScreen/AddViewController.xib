@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="SQLiteDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="6n1-3o-pIC" id="AVI-qf-HMu"/>
+                <outlet property="mobileTextField" destination="ixx-d0-k1z" id="4oh-KF-oyB"/>
+                <outlet property="nameTextField" destination="FN5-9X-97v" id="r4x-GY-Lim"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FN5-9X-97v">
+                    <rect key="frame" x="57" y="184" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gfw-Te-X5I"/>
+                        <constraint firstAttribute="width" constant="300" id="ibf-5y-lRa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixx-d0-k1z">
+                    <rect key="frame" x="57" y="304" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Sx0-6N-rCW"/>
+                        <constraint firstAttribute="height" constant="50" id="ieH-0j-agt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mry-43-YyZ">
+                    <rect key="frame" x="142" y="404" width="130" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cH0-lY-69g"/>
+                        <constraint firstAttribute="width" constant="130" id="zxu-Gc-Prb"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                    <connections>
+                        <action selector="SubmitBtn:" destination="-1" eventType="touchUpInside" id="Bzw-tO-vCn"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6n1-3o-pIC">
+                    <rect key="frame" x="57" y="244" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="4fC-Ye-Utw"/>
+                        <constraint firstAttribute="height" constant="50" id="cdn-Ge-vKI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="ixx-d0-k1z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1e5-7T-I5u"/>
+                <constraint firstItem="6n1-3o-pIC" firstAttribute="top" secondItem="FN5-9X-97v" secondAttribute="bottom" constant="10" id="2Mc-Hg-qUu"/>
+                <constraint firstItem="mry-43-YyZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9EC-ib-shO"/>
+                <constraint firstItem="mry-43-YyZ" firstAttribute="top" secondItem="ixx-d0-k1z" secondAttribute="bottom" constant="50" id="HAq-MA-xoc"/>
+                <constraint firstItem="FN5-9X-97v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ix0-So-YsL"/>
+                <constraint firstItem="ixx-d0-k1z" firstAttribute="top" secondItem="6n1-3o-pIC" secondAttribute="bottom" constant="10" id="WwX-ux-M3b"/>
+                <constraint firstItem="6n1-3o-pIC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bHr-CY-0UA"/>
+                <constraint firstItem="FN5-9X-97v" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="140" id="rOI-pG-m9T"/>
+            </constraints>
+            <point key="canvasLocation" x="248" y="199"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
